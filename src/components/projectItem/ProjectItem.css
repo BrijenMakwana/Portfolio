@@ -1,0 +1,43 @@
+.p{
+    width: 30%;
+    margin: 20px 10px;
+    border: 2px solid rgb(243, 242, 242);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+
+.p-browser{
+    height: 20px;
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    align-items: center;
+}
+
+.p-circle{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 3px;
+    background-color: white;
+}
+
+.p-img{
+    width: 100%;
+}
+
+.p-info{
+    width: 100%;
+    
+}
+
+.p-title{
+    font-size: 30px;
+}
+
+.p-details{
+    font-size: 15;
+    height: 100%;
+    margin: 10px;
+    text-align: left;
+}
+

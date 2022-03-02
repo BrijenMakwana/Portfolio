@@ -1,0 +1,29 @@
+.ac{
+    width: 20%;
+    margin: 20px 20px;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.ac-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.ac-info{
+    width: 100%;
+    align-items: center;
+    text-align: center;    
+}
+
+.ac-title{
+    font-size: 20px;
+}
+
+.ac-details{
+    font-size: 10;
+    height: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
