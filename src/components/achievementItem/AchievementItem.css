@@ -1,5 +1,5 @@
 .ac{
-    width: 15%;
+    width: 23%;
     margin: 20px 30px;
     overflow: hidden;
   
@@ -17,13 +17,15 @@
 }
 
 .ac-title{
-    font-size: 18px;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 .ac-details{
-    font-size: 12;
+    font-size: 15px;
     height: 100%;
     margin: 10px;
     text-align:left;
+    text-align: left;
 }
 

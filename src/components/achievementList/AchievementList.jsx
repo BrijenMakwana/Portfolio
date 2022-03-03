@@ -5,19 +5,19 @@ import "./AchievementList.css"
 export default function AchievementList(props) {
     const [achievements,setAchievements] = useState([]);
 
-    const getPersonalDetails = () => {
+    const getAchievements = () => {
         fetch(
           "https://gzsq4ssh.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D%22achievements%22%5D%7B%0A%20%20title%2C%0A%20%20%22imageUrl%22%3A%20image.asset-%3Eurl%2C%0A%20%20description%2C%0A%20%20url%0A%7D"
         )
           .then((res) => res.json())
           .then((res) => {
-              console.log(res.result[0])
+              
               setAchievements(res.result);
           });
       };
     
       useEffect(() => {
-        getPersonalDetails();
+        getAchievements();
       }, []);
 
   return (

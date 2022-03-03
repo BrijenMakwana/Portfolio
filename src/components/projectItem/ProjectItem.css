@@ -1,9 +1,10 @@
 .p{
     width: 30%;
-    margin: 20px 10px;
+    margin: 20px 13px;
     border: 2px solid rgb(243, 242, 242);
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
+    
 }
 
 .p-browser{
@@ -23,6 +24,7 @@
 
 .p-img{
     width: 100%;
+    object-fit: contain;
 }
 
 .p-info{
@@ -31,7 +33,7 @@
 }
 
 .p-title{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .p-details{

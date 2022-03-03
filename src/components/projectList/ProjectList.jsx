@@ -1,8 +1,24 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import "./ProjectList.css"
 import ProjectItem from "../projectItem/ProjectItem" 
 
 export default function ProjectList(props) {
+  const [projects,setProjects] = useState([]);
+
+    const getAchievements = () => {
+        fetch(
+          "https://gzsq4ssh.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D%22projects%22%5D%7B%0A%20%20title%2C%0A%20%20%22imageUrl%22%3A%20image.asset-%3Eurl%2C%0A%20%20description%2C%0A%20%20url%0A%7D"
+        )
+          .then((res) => res.json())
+          .then((res) => {
+              
+              setProjects(res.result);
+          });
+      };
+    
+      useEffect(() => {
+        getAchievements();
+      }, []);
   
   return (
     <div className='pl'>
@@ -13,30 +29,16 @@ export default function ProjectList(props) {
             </p>
         </div>
         <div className='pl-list'>
-            <ProjectItem 
-              link="https://github.com/BrijenMakwana"
-              image="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"  
-            />
-            <ProjectItem 
-              link="https://github.com/BrijenMakwana"
-              image="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"  
-            />
-            <ProjectItem 
-              link="https://github.com/BrijenMakwana"
-              image="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"  
-            />
-            <ProjectItem 
-              link="https://github.com/BrijenMakwana"
-              image="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"  
-            />
-            <ProjectItem 
-              link="https://github.com/BrijenMakwana"
-              image="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"  
-            />
-            <ProjectItem 
-              link="https://github.com/BrijenMakwana"
-              image="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"  
-            />
+        {
+            projects && projects.map((item,index)=>(
+                <ProjectItem 
+                    key={index} 
+                    title={item.title} 
+                    imageUrl={item.imageUrl} 
+                    url={item.url} 
+                    description={item.description}/>
+            ))
+        }
         </div>
     </div>
   )
