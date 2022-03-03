@@ -4,14 +4,13 @@ import "./AchievementItem.css"
 export default function AchievementItem(props) {
   return (
     <div className='ac'>
-      <a href={props.link} target="_blank" rel="noreferrer">
-        <img src={props.image} alt="project" className='ac-img'/>
+      <a href={props.url} target="_blank" rel="noreferrer">
+        <img src={props.imageUrl} alt="project" className='ac-img'/>
       </a>
       <div className='ac-info'>
-        <h2 className='ac-title'>Technical Content Writer</h2>
+        <h2 className='ac-title'>{props.title}</h2>
         <p className='ac-details'>
-          I have muliple articles published at GeeksforGeeks
-          I have muliple articles published at GeeksforGeeks
+          {props.description}
         </p>
       </div>
       

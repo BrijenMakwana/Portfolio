@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import AchievementItem from "../achievementItem/AchievementItem"
 import "./AchievementList.css"
 
 export default function AchievementList(props) {
+    const [achievements,setAchievements] = useState([]);
+
+    const getPersonalDetails = () => {
+        fetch(
+          "https://gzsq4ssh.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D%22achievements%22%5D%7B%0A%20%20title%2C%0A%20%20%22imageUrl%22%3A%20image.asset-%3Eurl%2C%0A%20%20description%2C%0A%20%20url%0A%7D"
+        )
+          .then((res) => res.json())
+          .then((res) => {
+              console.log(res.result[0])
+              setAchievements(res.result);
+          });
+      };
+    
+      useEffect(() => {
+        getPersonalDetails();
+      }, []);
+
   return (
     <div className='al'>
     <div className='al-texts'>
@@ -12,18 +29,16 @@ export default function AchievementList(props) {
         </p>
     </div>
     <div className='al-list'>
-        <AchievementItem
-            link="https://github.com/BrijenMakwana"
-            image="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210909130819/284_00_Socialmediapost-1.png"
-        />
-        <AchievementItem
-            link="https://www.youtube.com/watch?v=fLanCWsjGrk&list=PLS1QulWo1RIb_tyiPyOghZu_xSiCkB1h4"
-            image="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-        />
-        <AchievementItem
-            link="http://techbruce.com"
-            image="https://secureservercdn.net/198.71.233.189/4ky.91a.myftpupload.com/wp-content/uploads/2020/04/techbruce.png"
-        />
+        {
+            achievements && achievements.map((item,index)=>(
+                <AchievementItem 
+                    key={index} 
+                    title={item.title} 
+                    imageUrl={item.imageUrl} 
+                    url={item.url} 
+                    description={item.description}/>
+            ))
+        }
         
     </div>
 </div>

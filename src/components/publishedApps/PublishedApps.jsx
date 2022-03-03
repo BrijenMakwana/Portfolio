@@ -11,7 +11,7 @@ export default function PublishedApps(props) {
           )
             .then((res) => res.json())
             .then((res) => {
-                console.log(res.result)
+                
                 setPublishedApps(res.result);
             });
     }

@@ -1,7 +1,8 @@
 .ac{
-    width: 20%;
-    margin: 20px 20px;
+    width: 15%;
+    margin: 20px 30px;
     overflow: hidden;
+  
 }
 
 .ac-img{
@@ -13,17 +14,16 @@
 .ac-info{
     width: 100%;
     align-items: center;
-    text-align: center;    
 }
 
 .ac-title{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .ac-details{
-    font-size: 10;
+    font-size: 12;
     height: 100%;
     margin: 10px;
-    text-align: center;
+    text-align:left;
 }
 
