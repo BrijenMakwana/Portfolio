@@ -24,6 +24,7 @@ export default function AchievementList() {
             link="http://techbruce.com"
             image="https://secureservercdn.net/198.71.233.189/4ky.91a.myftpupload.com/wp-content/uploads/2020/04/techbruce.png"
         />
+        
     </div>
 </div>
   )

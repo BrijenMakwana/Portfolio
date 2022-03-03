@@ -1,4 +1,4 @@
-.al{
+.pa{
     padding: 50px 100px;
     display: flex;
     flex-direction: column;
@@ -6,22 +6,22 @@
     text-align: center;
 }
 
-.al-texts{
+.pa-texts{
     width: 65%;
 }
 
-.al-title{
+.pa-title{
     font-size: 50px;
     font-weight: 600;
 }
 
-.al-desc{
+.pa-desc{
     margin: 20px 0px;
 }
 
-.al-list{
+.pa-list{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }

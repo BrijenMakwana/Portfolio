@@ -11,6 +11,7 @@ export default function AchievementItem(props) {
         <h2 className='ac-title'>Technical Content Writer</h2>
         <p className='ac-details'>
           I have muliple articles published at GeeksforGeeks
+          I have muliple articles published at GeeksforGeeks
         </p>
       </div>
       

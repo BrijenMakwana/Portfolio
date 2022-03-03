@@ -6,7 +6,7 @@ export default function ProjectList() {
   return (
     <div className='pl'>
         <div className='pl-texts'>
-            <h1 className='pl-title'>Projects built by me</h1>
+            <h1 className='pl-title'>My Projects</h1>
             <p className='pl-desc'>
             I Love building mobile applications.
              React Native is my first choice to create cross platform applications. 

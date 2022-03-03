@@ -1,29 +1,23 @@
-.ac{
-    width: 20%;
+.ai{
+    width: 12%;;
     margin: 20px 20px;
     overflow: hidden;
 }
 
-.ac-img{
+.ai-img{
     width: 100%;
     object-fit: contain;
     border-radius: 10%;
 }
 
-.ac-info{
+.ai-info{
     width: 100%;
     align-items: center;
     text-align: center;    
+    justify-content: center;
 }
 
-.ac-title{
+.ai-title{
     font-size: 20px;
-}
-
-.ac-details{
-    font-size: 10;
-    height: 100%;
-    margin: 10px;
-    text-align: center;
 }
 
