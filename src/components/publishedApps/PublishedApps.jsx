@@ -2,13 +2,13 @@ import React from 'react'
 import "./PublishedApps.css"
 import AppItem from "../appItem/AppItem"
 
-export default function PublishedApps() {
+export default function PublishedApps(props) {
   return (
     <div className='pa'>
     <div className='pa-texts'>
-        <h1 className='pa-title'>Published Apps on Play Store</h1>
+        <h1 className='pa-title'>{props.heading}</h1>
         <p className='pa-desc'>
-        I have multiple apps published on Android Play Store. ALl of them are listed below.
+        {props.description}
         </p>
     </div>
     <div className='pa-list'>

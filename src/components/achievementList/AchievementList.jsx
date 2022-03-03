@@ -2,13 +2,13 @@ import React from 'react'
 import AchievementItem from "../achievementItem/AchievementItem"
 import "./AchievementList.css"
 
-export default function AchievementList() {
+export default function AchievementList(props) {
   return (
     <div className='al'>
     <div className='al-texts'>
-        <h1 className='al-title'>Achievements</h1>
+        <h1 className='al-title'>{props.heading}</h1>
         <p className='al-desc'>
-        Apart from software development, i'm also active in other technical fields. Some of my work listed below.
+        {props.description}
         </p>
     </div>
     <div className='al-list'>

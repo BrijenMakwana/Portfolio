@@ -2,18 +2,14 @@ import React from 'react'
 import "./ProjectList.css"
 import ProjectItem from "../projectItem/ProjectItem" 
 
-export default function ProjectList() {
+export default function ProjectList(props) {
+  
   return (
     <div className='pl'>
         <div className='pl-texts'>
-            <h1 className='pl-title'>My Projects</h1>
+            <h1 className='pl-title'>{props.heading}</h1>
             <p className='pl-desc'>
-            I Love building mobile applications.
-             React Native is my first choice to create cross platform applications. 
-             I have many apps published on Play Store. 
-             I have been creating YouTube vidoes on Progemmingknowledge channel since 2018. 
-             I also like writing and have contibuted mulitple articles on GeeksforGeeks. 
-             I also have my own blog called TechBruce where I create articles about latest tech and gadgets.
+            {props.description}
             </p>
         </div>
         <div className='pl-list'>
