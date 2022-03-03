@@ -1,8 +1,25 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import "./PublishedApps.css"
 import AppItem from "../appItem/AppItem"
 
 export default function PublishedApps(props) {
+    const [publishedApps,setPublishedApps] = useState("");
+
+    const getAllApps = () => {
+         fetch(
+            "https://gzsq4ssh.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D%22apps%22%5D%7B%0A%20%20title%2C%0A%20%20%22imageUrl%22%3A%20image.asset-%3Eurl%2C%0A%20%20url%0A%7D"
+          )
+            .then((res) => res.json())
+            .then((res) => {
+                console.log(res.result)
+                setPublishedApps(res.result);
+            });
+    }
+
+    useEffect(()=>{
+        getAllApps();
+    },[])
+
   return (
     <div className='pa'>
     <div className='pa-texts'>
@@ -12,19 +29,11 @@ export default function PublishedApps(props) {
         </p>
     </div>
     <div className='pa-list'>
-        <AppItem
-            link="https://github.com/BrijenMakwana"
-            image="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210909130819/284_00_Socialmediapost-1.png"
-        />
-        <AppItem
-            link="https://github.com/BrijenMakwana"
-            image="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210909130819/284_00_Socialmediapost-1.png"
-        />
-        <AppItem
-            link="https://github.com/BrijenMakwana"
-            image="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210909130819/284_00_Socialmediapost-1.png"
-        />
-        
+        {
+            publishedApps && publishedApps.map((item,index)=>(
+                <AppItem key={index} title={item.title} imageUrl={item.imageUrl} url={item.url}/>
+            ))
+        }
     </div>
 </div>
   )
