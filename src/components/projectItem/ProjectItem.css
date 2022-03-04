@@ -38,9 +38,25 @@
 }
 
 .p-details{
-    font-size: 15;
+    font-size: 15px;
     height: 100%;
     margin: 10px;
     text-align: left;
 }
 
+
+
+@media screen and (max-width: 480px) {
+    .p{
+        width: 100%;
+    }
+
+    .p-title{
+        font-size: 18px;
+    }
+
+    .p-details{
+        font-size: 13px;
+    }
+
+}

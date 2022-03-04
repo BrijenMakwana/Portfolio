@@ -57,3 +57,40 @@
     font-size: 20px;
     
 }
+
+
+@media screen and (max-width: 480px) {
+    .a{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .a-left{
+        width: 100%;
+    }
+
+    .a-card{
+        height: 30vh;
+    }
+
+    .a-card.bg{
+        display: none;
+    }
+    .a-right{
+        text-align: center;
+        width: 100%;
+    }
+    .a-sub{
+        font-size: 15px;
+        width: 100%;
+    }
+    
+    .a-desc{
+        text-align: left;
+        font-size: 14px;
+        width: 100%;
+    }
+}

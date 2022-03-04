@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
 }
 
 .pa-texts{
@@ -25,4 +26,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+
+@media screen and (max-width: 480px) {
+    .pa{
+        padding: 10px;
+    
+    }
+
+    .pa-texts{
+        width: 100%;
+    }
+
+    .pa-title{
+        font-size: 32px;
+        
+    }
+
+    .pa-desc{
+        font-size: 15px;
+    }
 }

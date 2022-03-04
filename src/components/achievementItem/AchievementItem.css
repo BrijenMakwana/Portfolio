@@ -29,3 +29,22 @@
     text-align: left;
 }
 
+
+@media screen and (max-width: 480px) {
+    .ac{
+        width: 100%;
+        align-items: center;
+    }
+
+    .ac-title{
+        font-size: 18px;
+    }
+
+    .ac-details{
+        font-size: 13px;
+        text-align: center;
+    }
+
+}
+
+

@@ -25,7 +25,7 @@ export default function AchievementList(props) {
     <div className='al-texts'>
         <h1 className='al-title'>{props.heading}</h1>
         <p className='al-desc'>
-        {props.description}
+          {props.description}
         </p>
     </div>
     <div className='al-list'>
