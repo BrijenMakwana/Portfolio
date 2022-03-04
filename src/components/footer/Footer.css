@@ -1,0 +1,40 @@
+.f{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+.f-texts{
+    width: 100%;
+}
+
+.f-title{
+    font-size: 25px;
+    font-weight: 600;
+    color:white;
+}
+
+.f-desc{
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .f-title{
+        font-size: 20px;
+    
+    }
+
+    .f-desc{
+        font-size: 13px;
+    }
+
+
+}
+

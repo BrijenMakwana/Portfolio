@@ -5,6 +5,7 @@ import AchievementList from "./components/achievementList/AchievementList";
 import Introduction from "./components/introduction/Introduction";
 import ProjectList from "./components/projectList/ProjectList";
 import PublishedApps from "./components/publishedApps/PublishedApps";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [personal, setPersonal] = useState([]);
@@ -43,6 +44,7 @@ function App() {
         heading={personal.appsHeading}
         description={personal.appsText}
       />
+      <Footer />
     </div>
   );
 }
