@@ -44,7 +44,7 @@ function App() {
         heading={personal.appsHeading}
         description={personal.appsText}
       />
-      <Footer />
+      <Footer email={personal.email} phone={personal.phone} />
     </div>
   );
 }
