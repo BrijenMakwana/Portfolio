@@ -25,7 +25,11 @@ function App() {
 
   return (
     <div>
-      <Introduction name={personal.name} />
+      <Introduction
+        name={personal.name}
+        position={personal.position}
+        introduction={personal.introduction}
+      />
       <About title={personal.aboutMeTitle} description={personal.AboutMeText} />
       <ProjectList
         heading={personal.projectsHeading}

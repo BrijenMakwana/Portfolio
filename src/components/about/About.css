@@ -41,15 +41,19 @@
 
 .a-title{
     font-weight: 400;
+    font-size: 40px;
 }
 
 .a-sub{
     margin: 20px 0px;
     font-weight: 500;
+    font-size: 20px;
+    width: 80%;
 }
 
 .a-desc{
     font-weight: 300;
     width: 80%;
+    font-size: 20px;
     
 }
