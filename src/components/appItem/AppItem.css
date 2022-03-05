@@ -25,12 +25,13 @@
 
 @media screen and (max-width: 480px) {
     .ai{
-        width: 15%;
+        width: 20%;
         margin: 10px;
     }
 
     .ai-title{
         font-size: 12px;
+        word-wrap: break-word;
     }
 
 }
