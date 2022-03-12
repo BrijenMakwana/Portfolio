@@ -1,0 +1,38 @@
+.s{
+    width: 8%;;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.s-img{
+    width: 65%;
+    object-fit: contain;
+    border-radius: 10%;
+}
+
+.s-info{
+    width: 100%;
+    align-items: center;
+    text-align: center;    
+    justify-content: center;
+}
+
+.s-title{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 480px) {
+    .s{
+        width: 18%;
+        margin: 10px;
+    }
+
+    .s-title{
+        font-size: 12px;
+        word-wrap: break-word;
+    }
+
+}
+

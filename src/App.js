@@ -3,6 +3,7 @@ import "./App.css";
 import About from "./components/about/About";
 import AchievementList from "./components/achievementList/AchievementList";
 import Introduction from "./components/introduction/Introduction";
+import SkillList from "./components/skillList/SkillList";
 import ProjectList from "./components/projectList/ProjectList";
 import PublishedApps from "./components/publishedApps/PublishedApps";
 import Footer from "./components/footer/Footer";
@@ -32,6 +33,7 @@ function App() {
         introduction={personal.introduction}
       />
       <About title={personal.aboutMeTitle} description={personal.AboutMeText} />
+      <SkillList heading={personal.skillsHeading} />
       <ProjectList
         heading={personal.projectsHeading}
         description={personal.projectsText}
