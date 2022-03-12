@@ -27,7 +27,7 @@
 @media screen and (max-width: 480px) {
     .sl{
         padding: 10px;
-    
+        margin-top: 15px;
     }
 
     .sl-texts{
