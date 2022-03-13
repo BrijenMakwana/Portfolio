@@ -1,9 +1,9 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import "./Introduction.css"
 import Me from "../../img/brijen.png"
 
 const Introduction = (props) => {
-    
+
   return (
     <div className='i'>
         <div className='i-left'>
@@ -14,7 +14,7 @@ const Introduction = (props) => {
                     <div className='i-title-wrapper'>
                         {
                             props.position && props.position.split(",").map((item,index)=>(
-                                <div key={index} className='i-title-item'>{item}</div>
+                                <div key={index} className='i-title-item' style={{color: props.randomColor}}>{item}</div>
                             ))
                         }
                     </div>
@@ -33,7 +33,7 @@ const Introduction = (props) => {
             </div>
         </div>
         <div className='i-right'>
-            <div className='i-bg'></div>
+            <div className='i-bg' style={{backgroundColor: props.randomColor}}></div>
             <img className='i-img'
                 src={Me} 
                 alt='my_image'
