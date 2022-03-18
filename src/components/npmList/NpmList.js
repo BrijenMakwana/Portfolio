@@ -22,8 +22,8 @@ export default function NpmList(props) {
   return (
     <div className="nl">
       <div className="nl-texts">
-        <h1 className="nl-title">{props.npmPackagesHeading}</h1>
-        <p className="nl-desc">{props.npmPackagesText}</p>
+        <h1 className="nl-title">{props.heading}</h1>
+        <p className="nl-desc">{props.description}</p>
       </div>
       <div className="nl-list">
         {npmList &&
