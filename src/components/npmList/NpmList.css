@@ -1,0 +1,51 @@
+.nl{
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.nl-texts{
+    width: 65%;
+}
+
+.nl-title{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.nl-desc{
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+.nl-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .nl{
+        padding: 10px;
+    }
+
+    .nl-texts{
+        width: 100%;
+    }
+
+    .nl-title{
+        font-size: 32px;
+    }
+
+    .nl-desc{
+        font-size: 15px;
+    }
+
+}

@@ -1,0 +1,48 @@
+.n{
+    width: 23%;
+    margin: 20px 30px;
+    overflow: hidden;
+}
+
+.n-img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.n-info{
+    width: 100%;
+    align-items: center;
+}
+
+.n-title{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.n-details{
+    font-size: 15px;
+    height: 100%;
+    margin: 10px;
+    text-align:left;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 480px) {
+    .n{
+        width: 100%;
+        align-items: center;
+    }
+
+    .n-title{
+        font-size: 18px;
+    }
+
+    .n-details{
+        font-size: 13px;
+        text-align: center;
+    }
+
+}
+
+

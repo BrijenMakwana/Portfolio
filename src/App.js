@@ -7,6 +7,7 @@ import SkillList from "./components/skillList/SkillList";
 import ProjectList from "./components/projectList/ProjectList";
 import PublishedApps from "./components/publishedApps/PublishedApps";
 import Footer from "./components/footer/Footer";
+import NpmList from "./components/npmList/NpmList";
 
 function App() {
   const [personal, setPersonal] = useState([]);
@@ -48,6 +49,10 @@ function App() {
       <PublishedApps
         heading={personal.appsHeading}
         description={personal.appsText}
+      />
+      <NpmList
+        heading={personal.npmPackagesHeading}
+        description={personal.npmPackagesText}
       />
       <Footer
         email={personal.email}
