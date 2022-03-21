@@ -7,7 +7,7 @@ export default function Others(props) {
 
   const getOtherProjectsList = () => {
     fetch(
-      "https://gzsq4ssh.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D%22others%22%5D%7C%20order(_createdAt%20asc)%7B%0A%20%20title%2C%0A%20%20type%2C%0A%20%20%22imageUrl%22%3A%20image.asset-%3Eurl%2C%0A%20%20description%0A%7D"
+      "https://gzsq4ssh.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D%22others%22%5D%7C%20order(_createdAt%20asc)%7B%0A%20%20title%2C%0A%20%20type%2C%0A%20%20%22imageUrl%22%3A%20image.asset-%3Eurl%2C%0A%20%20url%2C%0A%20%20description%0A%7D"
     )
       .then((res) => res.json())
       .then((res) => {
