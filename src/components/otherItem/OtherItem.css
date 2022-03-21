@@ -1,25 +1,32 @@
-.n{
+.o{
     width: 23%;
     margin: 20px 30px;
     overflow: hidden;
 }
 
-.n-img{
+.o-img{
     width: 100%;
     object-fit: contain;
 }
 
-.n-info{
+.o-info{
     width: 100%;
     align-items: center;
 }
 
-.n-title{
+.o-title{
     font-size: 20px;
     margin-top: 10px;
 }
 
-.n-details{
+.o-category{
+    width:fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+}
+
+.o-details{
     font-size: 15px;
     height: 100%;
     margin: 10px;
@@ -29,16 +36,16 @@
 
 
 @media screen and (max-width: 480px) {
-    .n{
+    .o{
         width: 100%;
         align-items: center;
     }
 
-    .n-title{
+    .o-title{
         font-size: 18px;
     }
 
-    .n-details{
+    .o-details{
         font-size: 13px;
         text-align: center;
     }

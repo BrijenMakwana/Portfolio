@@ -10,7 +10,7 @@ export default function ProjectItem(props) {
         <div className='p-circle'></div>
       </div>
       <a href={props.url} target="_blank" rel="noreferrer">
-        <img src={props.imageUrl} alt="project" className='p-img'/>
+        <img src={props.imageUrl} alt={props.title} className='p-img'/>
       </a>
       <div className='p-info'>
         <h2 className='p-title'>{props.title}</h2>

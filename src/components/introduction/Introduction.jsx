@@ -36,7 +36,7 @@ const Introduction = (props) => {
             <div className='i-bg' style={{backgroundColor: props.randomColor}}></div>
             <img className='i-img'
                 src={Me} 
-                alt='my_image'
+                alt='Brijen Makwana'
             />
         </div>
     </div>

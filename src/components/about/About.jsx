@@ -9,7 +9,7 @@ export default function About(props) {
         <div className='a-left'>
             <div className='a-card bg'></div>
             <div className='a-card'>
-                <img src={Me} alt="my_image" className='a-img'/>
+                <img src={Me} alt="Brijen Makwana" className='a-img'/>
             </div>
         </div>
         <div className='a-right'>

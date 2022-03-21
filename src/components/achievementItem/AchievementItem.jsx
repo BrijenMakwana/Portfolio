@@ -5,7 +5,7 @@ export default function AchievementItem(props) {
   return (
     <div className='ac'>
       <a href={props.url} target="_blank" rel="noreferrer">
-        <img src={props.imageUrl} alt="project" className='ac-img'/>
+        <img src={props.imageUrl} alt={props.title} className='ac-img'/>
       </a>
       <div className='ac-info'>
         <h2 className='ac-title'>{props.title}</h2>

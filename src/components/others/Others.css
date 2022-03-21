@@ -1,4 +1,4 @@
-.nl{
+.ol{
     padding: 50px 100px;
     display: flex;
     flex-direction: column;
@@ -7,21 +7,21 @@
     
 }
 
-.nl-texts{
+.ol-texts{
     width: 65%;
 }
 
-.nl-title{
+.ol-title{
     font-size: 50px;
     font-weight: 600;
 }
 
-.nl-desc{
+.ol-desc{
     margin: 20px 0px;
     font-size: 20px;
 }
 
-.nl-list{
+.ol-list{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -32,19 +32,19 @@
 
 @media screen and (max-width: 480px) {
 
-    .nl{
+    .ol{
         padding: 10px;
     }
 
-    .nl-texts{
+    .ol-texts{
         width: 100%;
     }
 
-    .nl-title{
+    .ol-title{
         font-size: 32px;
     }
 
-    .nl-desc{
+    .ol-desc{
         font-size: 15px;
     }
 
