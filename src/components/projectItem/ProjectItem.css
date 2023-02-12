@@ -1,62 +1,61 @@
-.p{
-    width: 30%;
-    min-height: 50vh;
-    margin: 20px 13px;
-    border: 2px solid rgb(243, 242, 242);
-    border-radius: 10px 10px 0px 0px;
-    overflow: hidden;
-    
+.p {
+  width: 400px;
+  height: fit-content;
+  margin: 20px 13px;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.p-browser{
-    height: 20px;
-    background-color: rgb(243, 242, 242);
-    display: flex;
-    align-items: center;
+.p:hover {
+  background-color: #03c4a1;
+  animation: pulse 0.5s linear;
 }
 
-.p-circle{
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    margin: 3px;
-    background-color: white;
+.p:hover .p-details {
+  color: #000;
 }
 
-.p-img{
-    width: 100%;
-    object-fit: contain;
+.p-img {
+  width: 100%;
+  object-fit: contain;
 }
 
-.p-info{
-    width: 100%;
-    
+.p-info {
+  width: 100%;
 }
 
-.p-title{
-    font-size: 25px;
+.p-title {
+  font-size: 25px;
+  color: #f6c90e;
+  font-weight: 600;
 }
 
-.p-details{
-    font-size: 15px;
-    height: 100%;
-    margin: 10px;
-    text-align: left;
+.p-details {
+  font-size: 15px;
+  font-weight: 500;
+  height: 100%;
+  margin: 10px;
+  text-align: left;
+  line-height: 25px;
 }
 
-
+@keyframes pulse {
+  50% {
+    transform: scale(1.1);
+  }
+}
 
 @media screen and (max-width: 480px) {
-    .p{
-        width: 100%;
-    }
+  .p {
+    width: 100%;
+  }
 
-    .p-title{
-        font-size: 18px;
-    }
+  .p-title {
+    font-size: 18px;
+  }
 
-    .p-details{
-        font-size: 13px;
-    }
-
+  .p-details {
+    font-size: 13px;
+  }
 }

@@ -1,14 +1,15 @@
 .s {
   width: 8%;
-  margin: 20px;
+  margin: 10px;
   overflow: hidden;
+  padding: 5px;
 }
 
 .s-img {
-  width: 65%;
+  width: 55%;
   object-fit: contain;
   border-radius: 10%;
-  animation: pulse 1s linear infinite;
+  animation: pulse 1s ease-in-out infinite;
 }
 
 .s-info {
@@ -28,7 +29,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
   100% {
     transform: scale(1);

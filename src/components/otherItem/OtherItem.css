@@ -1,7 +1,18 @@
 .o {
-  width: 23%;
+  width: 400px;
   margin: 20px 30px;
   overflow: hidden;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.o:hover {
+  background-color: #03c4a1;
+  animation: pulse 0.5s linear;
+}
+
+.o:hover .o-details {
+  color: #000;
 }
 
 .o-img {
@@ -36,6 +47,12 @@
   text-align: left;
   text-align: left;
   line-height: 25px;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 @media screen and (max-width: 480px) {
