@@ -1,38 +1,35 @@
-.ai{
-    width: 9%;;
-    margin: 20px;
-    overflow: hidden;
+.ai {
+  width: 9%;
+  margin: 20px;
+  overflow: hidden;
 }
 
-.ai-img{
-    width: 100%;
-    object-fit: contain;
-    border-radius: 10%;
+.ai-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10%;
 }
 
-.ai-info{
-    width: 100%;
-    align-items: center;
-    text-align: center;    
-    justify-content: center;
+.ai-info {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
-.ai-title{
-    font-size: 16px;
-    font-weight: 500;
+.ai-title {
+  font-size: 16px;
+  font-weight: 500;
 }
-
 
 @media screen and (max-width: 480px) {
-    .ai{
-        width: 20%;
-        margin: 10px;
-    }
+  .ai {
+    width: 20%;
+    margin: 10px;
+  }
 
-    .ai-title{
-        font-size: 12px;
-        word-wrap: break-word;
-    }
-
+  .ai-title {
+    font-size: 12px;
+    word-wrap: break-word;
+  }
 }
-

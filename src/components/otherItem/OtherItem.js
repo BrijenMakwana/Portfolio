@@ -10,12 +10,7 @@ export default function OtherItem(props) {
       <div className="o-info">
         <h2 className="o-title">{props.title}</h2>
         <p className="o-details">{props.description}</p>
-        <h4
-          className="o-category"
-          style={{ backgroundColor: props.randomColor }}
-        >
-          {props.type}
-        </h4>
+        <h4 className="o-category">{props.type}</h4>
       </div>
     </div>
   );
