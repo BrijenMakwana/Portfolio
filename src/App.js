@@ -11,7 +11,6 @@ import Others from "./components/others/Others";
 
 function App() {
   const [personal, setPersonal] = useState([]);
-  const [randomColor, setRandomColor] = useState("");
 
   const getPersonalDetails = () => {
     fetch(
@@ -25,7 +24,6 @@ function App() {
 
   useEffect(() => {
     getPersonalDetails();
-    setRandomColor("#" + Math.floor(Math.random() * 16777215).toString(16));
   }, []);
 
   return (
@@ -34,7 +32,6 @@ function App() {
         name={personal.name}
         position={personal.position}
         introduction={personal.introduction}
-        randomColor={randomColor}
       />
       <About title={personal.aboutMeTitle} description={personal.AboutMeText} />
       <SkillList heading={personal.skillsHeading} />
@@ -53,13 +50,8 @@ function App() {
       <Others
         heading={personal.othersHeading}
         description={personal.othersText}
-        randomColor={randomColor}
       />
-      <Footer
-        email={personal.email}
-        phone={personal.phone}
-        randomColor={randomColor}
-      />
+      <Footer email={personal.email} phone={personal.phone} />
     </div>
   );
 }
