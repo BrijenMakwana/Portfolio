@@ -1,50 +1,47 @@
-.ac{
-    width: 23%;
-    margin: 20px 30px;
-    overflow: hidden;
-  
+.ac {
+  width: 23%;
+  margin: 20px 30px;
+  overflow: hidden;
 }
 
-.ac-img{
-    width: 100%;
-    object-fit: contain;
-    border-radius: 10%;
+.ac-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10%;
 }
 
-.ac-info{
-    width: 100%;
-    align-items: center;
+.ac-info {
+  width: 100%;
+  align-items: center;
 }
 
-.ac-title{
-    font-size: 20px;
-    margin-top: 10px;
+.ac-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #f6c90e;
 }
 
-.ac-details{
-    font-size: 15px;
-    height: 100%;
-    margin: 10px;
-    text-align:left;
-    text-align: left;
+.ac-details {
+  font-size: 15px;
+  height: 100%;
+  margin: 10px;
+  text-align: left;
+  text-align: left;
 }
-
 
 @media screen and (max-width: 480px) {
-    .ac{
-        width: 100%;
-        align-items: center;
-    }
+  .ac {
+    width: 100%;
+    align-items: center;
+  }
 
-    .ac-title{
-        font-size: 18px;
-    }
+  .ac-title {
+    font-size: 18px;
+  }
 
-    .ac-details{
-        font-size: 13px;
-        text-align: center;
-    }
-
+  .ac-details {
+    font-size: 13px;
+    text-align: center;
+  }
 }
-
-

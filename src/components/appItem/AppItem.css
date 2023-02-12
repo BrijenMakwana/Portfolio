@@ -1,38 +1,48 @@
-.ai{
-    width: 9%;;
-    margin: 20px;
-    overflow: hidden;
+.ai {
+  width: 9%;
+  margin: 20px;
+  overflow: hidden;
 }
 
-.ai-img{
-    width: 100%;
-    object-fit: contain;
-    border-radius: 10%;
+.ai-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10%;
+  animation: pulse 1s linear infinite;
 }
 
-.ai-info{
-    width: 100%;
-    align-items: center;
-    text-align: center;    
-    justify-content: center;
+.ai-info {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
-.ai-title{
-    font-size: 16px;
-    font-weight: 500;
+.ai-title {
+  font-size: 16px;
+  font-weight: 500;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 @media screen and (max-width: 480px) {
-    .ai{
-        width: 20%;
-        margin: 10px;
-    }
+  .ai {
+    width: 20%;
+    margin: 10px;
+  }
 
-    .ai-title{
-        font-size: 12px;
-        word-wrap: break-word;
-    }
-
+  .ai-title {
+    font-size: 12px;
+    word-wrap: break-word;
+  }
 }
-

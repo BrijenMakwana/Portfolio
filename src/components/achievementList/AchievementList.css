@@ -1,51 +1,47 @@
-.al{
-    padding: 50px 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
+.al {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.al-texts{
-    width: 65%;
+.al-texts {
+  width: 65%;
 }
 
-.al-title{
-    font-size: 50px;
-    font-weight: 600;
+.al-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #03c4a1;
 }
 
-.al-desc{
-    margin: 20px 0px;
-    font-size: 20px;
+.al-desc {
+  margin: 20px 0px;
+  font-size: 20px;
 }
 
-.al-list{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.al-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-
 
 @media screen and (max-width: 480px) {
+  .al {
+    padding: 10px;
+  }
 
-    .al{
-        padding: 10px;
-    }
+  .al-texts {
+    width: 100%;
+  }
 
-    .al-texts{
-        width: 100%;
-    }
+  .al-title {
+    font-size: 32px;
+  }
 
-    .al-title{
-        font-size: 32px;
-    }
-
-    .al-desc{
-        font-size: 15px;
-    }
-
+  .al-desc {
+    font-size: 15px;
+  }
 }

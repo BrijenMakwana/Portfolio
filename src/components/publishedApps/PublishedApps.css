@@ -1,50 +1,47 @@
-.pa{
-    padding: 50px 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
+.pa {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.pa-texts{
-    width: 65%;
+.pa-texts {
+  width: 65%;
 }
 
-.pa-title{
-    font-size: 50px;
-    font-weight: 600;
+.pa-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #03c4a1;
 }
 
-.pa-desc{
-    margin: 20px 0px;
-    font-size: 20px;
+.pa-desc {
+  margin: 20px 0px;
+  font-size: 20px;
 }
 
-.pa-list{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.pa-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 
 @media screen and (max-width: 480px) {
-    .pa{
-        padding: 10px;
-    
-    }
+  .pa {
+    padding: 10px;
+  }
 
-    .pa-texts{
-        width: 100%;
-    }
+  .pa-texts {
+    width: 100%;
+  }
 
-    .pa-title{
-        font-size: 32px;
-        
-    }
+  .pa-title {
+    font-size: 32px;
+  }
 
-    .pa-desc{
-        font-size: 15px;
-    }
+  .pa-desc {
+    font-size: 15px;
+  }
 }
