@@ -1,7 +1,25 @@
 .ac {
-  width: 23%;
-  margin: 20px 30px;
+  width: 300px;
+  height: fit-content;
+  margin: 20px 13px;
   overflow: hidden;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.ac:hover {
+  background-color: #03c4a1;
+  animation: pulse 0.5s linear;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.ac:hover .ac-details {
+  color: #000;
 }
 
 .ac-img {
@@ -19,7 +37,7 @@
   font-size: 20px;
   font-weight: 600;
   margin-top: 10px;
-  color: #f6c90e;
+  color: #ffd369;
 }
 
 .ac-details {
@@ -27,7 +45,7 @@
   height: 100%;
   margin: 10px;
   text-align: left;
-  text-align: left;
+  line-height: 25px;
 }
 
 @media screen and (max-width: 480px) {
