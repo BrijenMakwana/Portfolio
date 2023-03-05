@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: fit-content;
 }
 
 .i-intro {
@@ -31,7 +32,7 @@
 }
 
 .i-name {
-  font-size: 60px;
+  font-size: 50px;
   color: #03c4a1;
   animation: cool-animation 3s infinite;
 }
@@ -65,6 +66,7 @@
   overflow: hidden;
   border-left: 5px solid #03c4a1;
   padding-left: 12px;
+  margin-top: 20px;
 }
 
 .i-title-wrapper {
@@ -86,7 +88,7 @@
 
 .i-title-item {
   height: 50px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -101,9 +103,21 @@
 
 .i-img {
   width: 100%;
-  height: 100%;
+  height: 95%;
   object-fit: contain;
   position: absolute;
+  bottom: 0;
+  animation: fadein 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .i-bg {

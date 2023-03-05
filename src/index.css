@@ -13,7 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1b2430;
+  background-image: linear-gradient(to right, #0d1b2a, #323031);
 }
 
 code {
