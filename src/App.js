@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./App.css";
 import About from "./components/about/About";
 import AchievementList from "./components/achievementList/AchievementList";
 import Introduction from "./components/introduction/Introduction";
