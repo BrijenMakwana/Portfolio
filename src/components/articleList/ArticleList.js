@@ -35,8 +35,8 @@ export const ArticleList = (props) => {
       .then((data) => {
         // Extract the article information from the response
         const articles = data.data.user.publication.posts;
-        console.log(articles);
-        setLatestArticles(articles.slice(0, 4));
+
+        setLatestArticles(articles.slice(0, 3));
       })
       .catch((error) => {
         console.error(error);
