@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .articles-texts {
@@ -23,7 +23,7 @@
 }
 
 .articles-list {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
