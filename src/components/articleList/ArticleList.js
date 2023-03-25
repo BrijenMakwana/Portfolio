@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Article } from "../article/Article";
 import "./ArticleList.css";
 
-export const ArticleList = () => {
+export const ArticleList = (props) => {
   const [latestArticles, setLatestArticles] = useState([]);
+  const { heading, description } = props;
   const options = {
     method: "POST",
     headers: {
@@ -45,8 +46,8 @@ export const ArticleList = () => {
   return (
     <div className="articles-box" id="articles">
       <div className="articles-texts">
-        <h1 className="articles-title">articles</h1>
-        <p className="articles-desc">article</p>
+        <h1 className="articles-title">{heading}</h1>
+        <p className="articles-desc">{description}</p>
       </div>
       <div className="articles-list">
         {latestArticles.map((item) => (

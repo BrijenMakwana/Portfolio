@@ -43,7 +43,10 @@ function App() {
         heading={personal.achievementsHeading}
         description={personal.achievementsText}
       />
-      <ArticleList />
+      <ArticleList
+        heading={personal.articlesHeading}
+        description={personal.articlesText}
+      />
       <PublishedApps
         heading={personal.appsHeading}
         description={personal.appsText}
