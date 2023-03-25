@@ -7,6 +7,7 @@ import ProjectList from "./components/projectList/ProjectList";
 import PublishedApps from "./components/publishedApps/PublishedApps";
 import Footer from "./components/footer/Footer";
 import Others from "./components/others/Others";
+import { ArticleList } from "./components/articleList/ArticleList";
 
 function App() {
   const [personal, setPersonal] = useState([]);
@@ -42,6 +43,7 @@ function App() {
         heading={personal.achievementsHeading}
         description={personal.achievementsText}
       />
+      <ArticleList />
       <PublishedApps
         heading={personal.appsHeading}
         description={personal.appsText}
