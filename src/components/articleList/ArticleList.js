@@ -21,6 +21,7 @@ export const ArticleList = () => {
                 dateAdded
                 brief
                 coverImage
+                slug
               }
             }
           }
