@@ -1,13 +1,11 @@
 import React from "react";
 import "./Introduction.css";
 import Me from "../../img/brijen.png";
-import Navbar from "../navbar/Navbar";
 
 const Introduction = (props) => {
   return (
     <div className="i">
       <div className="i-left">
-        <Navbar />
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My Name is</h2>
           <h1 className="i-name">{props.name}</h1>

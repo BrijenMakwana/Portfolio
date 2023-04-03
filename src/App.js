@@ -8,9 +8,12 @@ import PublishedApps from "./components/publishedApps/PublishedApps";
 import Footer from "./components/footer/Footer";
 import Others from "./components/others/Others";
 import { ArticleList } from "./components/articleList/ArticleList";
+import Fab from "./components/fab/Fab";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   const [personal, setPersonal] = useState([]);
+  const [fabOpen, setFabOpen] = useState(false);
 
   const getPersonalDetails = () => {
     fetch(
@@ -27,7 +30,9 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <>
+      <Navbar fabOpen={fabOpen} setFabOpen={setFabOpen} />
+      <Fab setFabOpen={setFabOpen} fabOpen={fabOpen} />
       <Introduction
         name={personal.name}
         position={personal.position}
@@ -56,7 +61,7 @@ function App() {
         description={personal.othersText}
       />
       <Footer email={personal.email} phone={personal.phone} />
-    </div>
+    </>
   );
 }
 

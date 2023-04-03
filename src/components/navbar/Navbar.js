@@ -1,9 +1,13 @@
 import React from "react";
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar(props) {
+  const { fabOpen, setFabOpen } = props;
   return (
-    <nav className="nav-bar">
+    <nav
+      className={fabOpen ? "nav-bar fab-open" : "nav-bar fab-close"}
+      onClick={() => setFabOpen(false)}
+    >
       <a href="#about" className="nav-link">
         about
       </a>
