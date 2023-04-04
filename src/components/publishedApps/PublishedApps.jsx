@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./PublishedApps.css";
 import AppItem from "../appItem/AppItem";
+import color from "../../colors/color";
 
 export default function PublishedApps(props) {
   const [publishedApps, setPublishedApps] = useState("");
@@ -22,7 +23,9 @@ export default function PublishedApps(props) {
   return (
     <div className="pa" id="apps">
       <div className="pa-texts">
-        <h1 className="pa-title">{props.heading}</h1>
+        <h1 className="pa-title" style={{ color: color.primary }}>
+          {props.heading}
+        </h1>
         <p className="pa-desc">{props.description}</p>
       </div>
       <div className="pa-list">

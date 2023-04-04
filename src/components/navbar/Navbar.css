@@ -30,12 +30,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #03c4a1;
+  background-color: #19d3da;
   transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .nav-link:hover {
-  color: #03c4a1;
+  color: #19d3da;
   transform: translateY(-5px);
 }
 

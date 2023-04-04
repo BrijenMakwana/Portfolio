@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import OtherItem from "../otherItem/OtherItem";
 import "./Others.css";
+import color from "../../colors/color";
 
 export default function Others(props) {
   const [others, setOthers] = useState([]);
@@ -22,7 +23,9 @@ export default function Others(props) {
   return (
     <div className="ol" id="others">
       <div className="ol-texts">
-        <h1 className="ol-title">{props.heading}</h1>
+        <h1 className="ol-title" style={{ color: color.primary }}>
+          {props.heading}
+        </h1>
         <p className="ol-desc">{props.description}</p>
       </div>
       <div className="ol-list">

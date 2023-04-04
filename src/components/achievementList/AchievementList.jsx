@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AchievementItem from "../achievementItem/AchievementItem";
 import "./AchievementList.css";
+import color from "../../colors/color";
 
 export default function AchievementList(props) {
   const [achievements, setAchievements] = useState([]);
@@ -22,7 +23,9 @@ export default function AchievementList(props) {
   return (
     <div className="al" id="achievements">
       <div className="al-texts">
-        <h1 className="al-title">{props.heading}</h1>
+        <h1 className="al-title" style={{ color: color.primary }}>
+          {props.heading}
+        </h1>
         <p className="al-desc">{props.description}</p>
       </div>
       <div className="al-list">

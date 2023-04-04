@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ProjectList.css";
 import ProjectItem from "../projectItem/ProjectItem";
+import color from "../../colors/color";
 
 export default function ProjectList(props) {
   const [projects, setProjects] = useState([]);
@@ -22,7 +23,9 @@ export default function ProjectList(props) {
   return (
     <div className="pl" id="projects">
       <div className="pl-texts">
-        <h1 className="pl-title">{props.heading}</h1>
+        <h1 className="pl-title" style={{ color: color.primary }}>
+          {props.heading}
+        </h1>
         <p className="pl-desc">{props.description}</p>
       </div>
       <div className="pl-list">

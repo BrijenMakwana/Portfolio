@@ -9,7 +9,6 @@
 }
 
 .article-container:hover {
-  background-color: #03c4a1;
   animation: pulse 0.5s linear;
 }
 
@@ -21,15 +20,15 @@
 
 .date {
   position: absolute;
-  background-color: #03c4a1;
   font-size: 12px;
   padding: 5px 10px;
   font-weight: bold;
+  background-color: #19d3da;
 }
 
 .article-container:hover .date {
   background-color: #fff;
-  color: #03c4a1;
+  color: #19d3da;
 }
 
 .article-image {
@@ -42,7 +41,6 @@
   font-size: 20px;
   font-weight: 600;
   margin-top: 10px;
-  color: #ffd369;
 }
 
 .article-description {
