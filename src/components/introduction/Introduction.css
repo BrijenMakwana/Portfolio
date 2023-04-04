@@ -81,6 +81,7 @@ html {
 
 .i-img {
   height: 55vw;
+  max-height: 110%;
   right: 0;
   object-fit: contain;
   position: absolute;
