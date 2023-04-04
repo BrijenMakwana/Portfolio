@@ -8,7 +8,6 @@
 }
 
 .p:hover {
-  background-color: #03c4a1;
   animation: pulse 0.5s linear;
 }
 
@@ -27,7 +26,6 @@
 
 .p-title {
   font-size: 25px;
-  color: #ffd369;
   font-weight: 600;
 }
 

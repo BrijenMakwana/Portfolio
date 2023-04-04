@@ -7,7 +7,6 @@
 }
 
 .o:hover {
-  background-color: #03c4a1;
   animation: pulse 0.5s linear;
 }
 
@@ -16,7 +15,7 @@
 }
 
 .o:hover .o-category {
-  color: #03c4a1;
+  color: #19d3da;
   background-color: #fff;
 }
 
@@ -34,7 +33,6 @@
   font-size: 20px;
   font-weight: 600;
   margin-top: 10px;
-  color: #ffd369;
 }
 
 .o-category {
@@ -42,7 +40,7 @@
   border-radius: 10px;
   padding: 10px;
   color: #fff;
-  background-color: #03c4a1;
+  background-color: #19d3da;
 }
 
 .o-details {

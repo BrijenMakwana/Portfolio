@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./SkillList.css";
 import SkillItem from "../skillItem/SkillItem";
+import color from "../../colors/color";
 
 export default function SkillList(props) {
   const [skills, setSkills] = useState([]);
@@ -22,7 +23,9 @@ export default function SkillList(props) {
   return (
     <div className="sl" id="skills">
       <div className="sl-texts">
-        <h1 className="sl-title">{props.heading}</h1>
+        <h1 className="sl-title" style={{ color: color.primary }}>
+          {props.heading}
+        </h1>
       </div>
       <div className="sl-list">
         {skills &&

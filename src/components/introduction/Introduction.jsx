@@ -1,6 +1,7 @@
 import React from "react";
 import "./Introduction.css";
 import Me from "../../img/brijen.png";
+import color from "../../colors/color";
 
 const Introduction = (props) => {
   return (
@@ -8,8 +9,10 @@ const Introduction = (props) => {
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My Name is</h2>
-          <h1 className="i-name">{props.name}</h1>
-          <div className="i-title">
+          <h1 className="i-name" style={{ color: color.primary }}>
+            {props.name}
+          </h1>
+          <div className="i-title" style={{ borderLeftColor: color.primary }}>
             <div className="i-title-wrapper">
               {props.position &&
                 props.position.split(",").map((item, index) => (
@@ -32,7 +35,7 @@ const Introduction = (props) => {
         </div>
       </div>
       <div className="i-right">
-        <div className="i-bg"></div>
+        <div className="i-bg" style={{ backgroundColor: color.primary }}></div>
         <img className="i-img" src={Me} alt="Brijen Makwana" />
       </div>
     </div>
