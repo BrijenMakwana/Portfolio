@@ -30,8 +30,8 @@ function App() {
 
   return (
     <>
-      <Navbar fabOpen={fabIsOpen} setFabOpen={setFabIsOpen} />
-      <Fab setFabOpen={setFabIsOpen} fabOpen={fabIsOpen} />
+      <Navbar fabIsOpen={fabIsOpen} setFabIsOpen={setFabIsOpen} />
+      <Fab setFabIsOpen={setFabIsOpen} fabIsOpen={fabIsOpen} />
       <Introduction
         name={portfolio.name}
         roles={portfolio.roles}
