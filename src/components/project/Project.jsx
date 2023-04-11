@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "./ProjectItem.css";
+import "./Project.css";
 import color from "../../colors/color";
 
-export default function ProjectItem(props) {
+export default function Project(props) {
   const [bgColor, setBgColor] = useState("");
+  const { title, image, url, description } = props;
   return (
     <div
       className="p"
@@ -11,13 +12,13 @@ export default function ProjectItem(props) {
       onMouseOver={() => setBgColor(color.primary)}
       onMouseOut={() => setBgColor("")}
     >
-      <a href={props.url} target="_blank" rel="noreferrer">
-        <img src={props.imageUrl} alt={props.title} className="p-img" />
+      <a href={url} target="_blank" rel="noreferrer">
+        <img src={image} alt={title} className="p-img" />
         <div className="p-info">
           <h2 className="p-title" style={{ color: color.secondary }}>
-            {props.title}
+            {title}
           </h2>
-          <p className="p-details">{props.description}</p>
+          <p className="p-details">{description}</p>
         </div>
       </a>
     </div>

@@ -1,66 +1,69 @@
 import { useEffect, useState } from "react";
 import About from "./components/about/About";
-import AchievementList from "./components/achievementList/AchievementList";
 import Introduction from "./components/introduction/Introduction";
-import SkillList from "./components/skillList/SkillList";
-import ProjectList from "./components/projectList/ProjectList";
 import PublishedApps from "./components/publishedApps/PublishedApps";
 import Footer from "./components/footer/Footer";
-import Others from "./components/others/Others";
-import { ArticleList } from "./components/articleList/ArticleList";
 import Fab from "./components/fab/Fab";
 import Navbar from "./components/navbar/Navbar";
+import apiRequest from "./api/api";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
+import Achievements from "./components/achievements/Achievements";
+import Articles from "./components/articles/Articles";
+import OtherProjects from "./components/otherProjects/OtherProjects";
 
 function App() {
-  const [personal, setPersonal] = useState([]);
-  const [fabOpen, setFabOpen] = useState(false);
+  const [portfolio, setPortfolio] = useState([]);
+  const [fabIsOpen, setFabIsOpen] = useState(false);
 
-  const getPersonalDetails = () => {
-    fetch(
-      "https://gzsq4ssh.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D%22personal%22%5D"
-    )
+  const getPortfolio = () => {
+    fetch(apiRequest)
       .then((res) => res.json())
-      .then((res) => {
-        setPersonal(res.result[0]);
+      .then((data) => {
+        setPortfolio(data.result[0]);
       });
   };
 
   useEffect(() => {
-    getPersonalDetails();
+    getPortfolio();
   }, []);
 
   return (
     <>
-      <Navbar fabOpen={fabOpen} setFabOpen={setFabOpen} />
-      <Fab setFabOpen={setFabOpen} fabOpen={fabOpen} />
+      <Navbar fabOpen={fabIsOpen} setFabOpen={setFabIsOpen} />
+      <Fab setFabOpen={setFabIsOpen} fabOpen={fabIsOpen} />
       <Introduction
-        name={personal.name}
-        position={personal.position}
-        introduction={personal.introduction}
+        name={portfolio.name}
+        roles={portfolio.roles}
+        introduction={portfolio.introduction}
       />
-      <About title={personal.aboutMeTitle} description={personal.AboutMeText} />
-      <SkillList heading={personal.skillsHeading} />
-      <ProjectList
-        heading={personal.projectsHeading}
-        description={personal.projectsText}
+      <About about={portfolio.about} />
+      <Skills heading={portfolio.skillsHeading} skills={portfolio.skills} />
+      <Projects
+        heading={portfolio.projectsHeading}
+        description={portfolio.projectsDescription}
+        projects={portfolio.projects}
       />
-      <AchievementList
-        heading={personal.achievementsHeading}
-        description={personal.achievementsText}
+      <Achievements
+        heading={portfolio.achievementsHeading}
+        description={portfolio.achievementsDescription}
+        achievements={portfolio.achievements}
       />
-      <ArticleList
-        heading={personal.articlesHeading}
-        description={personal.articlesText}
+      <Articles
+        heading={portfolio.articlesHeading}
+        description={portfolio.articlesDescription}
       />
       <PublishedApps
-        heading={personal.appsHeading}
-        description={personal.appsText}
+        heading={portfolio.appsHeading}
+        description={portfolio.appsDescription}
+        apps={portfolio.apps}
       />
-      <Others
-        heading={personal.othersHeading}
-        description={personal.othersText}
+      <OtherProjects
+        heading={portfolio.otherProjectsHeading}
+        description={portfolio.otherProjectsDescription}
+        otherProjects={portfolio.otherProjects}
       />
-      <Footer email={personal.email} phone={personal.phone} />
+      <Footer email={portfolio.email} phone={portfolio.phone} />
     </>
   );
 }
