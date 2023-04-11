@@ -1,16 +1,16 @@
-import React from 'react'
-import "./AppItem.css"
+import React from "react";
+import "./AppItem.css";
 
 export default function AppItem(props) {
+  const { title, image, url } = props;
   return (
-    <div className='ai'>
-      <a href={props.url} target="_blank" rel="noreferrer">
-        <img src={props.imageUrl} alt={props.title} className='ai-img'/>
+    <div className="ai">
+      <a href={url} target="_blank" rel="noreferrer">
+        <img src={image} alt={title} className="ai-img" />
       </a>
-      <div className='ai-info'>
-        <h2 className='ai-title'>{props.title}</h2>
+      <div className="ai-info">
+        <h2 className="ai-title">{title}</h2>
       </div>
-      
     </div>
-  )
+  );
 }

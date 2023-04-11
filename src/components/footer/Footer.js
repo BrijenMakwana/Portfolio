@@ -4,7 +4,11 @@ import color from "../../colors/color";
 
 export default function Footer(props) {
   return (
-    <div className="f" id="contact" style={{ backgroundColor: color.primary }}>
+    <footer
+      className="f"
+      id="contact"
+      style={{ backgroundColor: color.primary }}
+    >
       <div className="f-texts">
         <h1 className="f-title">Contact Details</h1>
         <p className="f-desc">
@@ -12,6 +16,6 @@ export default function Footer(props) {
           <a href={`tel:${props.phone}`}>{props.phone}</a>
         </p>
       </div>
-    </div>
+    </footer>
   );
 }

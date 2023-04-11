@@ -4,20 +4,21 @@ import Me from "../../img/brijen.png";
 import color from "../../colors/color";
 
 const Introduction = (props) => {
+  const { name, roles, introduction } = props;
   return (
     <div className="i">
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My Name is</h2>
           <h1 className="i-name" style={{ color: color.primary }}>
-            {props.name}
+            {name}
           </h1>
           <div className="i-title" style={{ borderLeftColor: color.primary }}>
             <div className="i-title-wrapper">
-              {props.position &&
-                props.position.split(",").map((item, index) => (
+              {roles &&
+                roles.split(",").map((role, index) => (
                   <div key={index} className="i-title-item">
-                    {item}
+                    {role}
                   </div>
                 ))}
             </div>
@@ -26,17 +27,17 @@ const Introduction = (props) => {
             <b>Hello There! ✌🏻</b>
             <br />
             <ul>
-              {props.introduction &&
-                props.introduction
+              {introduction &&
+                introduction
                   .split(",")
-                  .map((item, index) => <li key={index}>{item}</li>)}
+                  .map((sentence, index) => <li key={index}>{sentence}</li>)}
             </ul>
           </div>
         </div>
       </div>
       <div className="i-right">
         <div className="i-bg" style={{ backgroundColor: color.primary }}></div>
-        <img className="i-img" src={Me} alt="Brijen Makwana" />
+        <img className="i-img" src={Me} alt={name} />
       </div>
     </div>
   );

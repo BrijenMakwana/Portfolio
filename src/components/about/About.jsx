@@ -4,6 +4,7 @@ import Me from "../../img/brijen_black.png";
 import color from "../../colors/color";
 
 export default function About(props) {
+  const { about } = props;
   return (
     <div className="a" id="about">
       <div className="a-left">
@@ -19,8 +20,7 @@ export default function About(props) {
         <h1 className="a-title" style={{ color: color.primary }}>
           About Me
         </h1>
-        <p className="a-sub">{props.title}</p>
-        <p className="a-desc">{props.description}</p>
+        <p className="a-desc">{about}</p>
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "./AchievementItem.css";
+import "./Achievement.css";
 import color from "../../colors/color";
 
-export default function AchievementItem(props) {
+export default function Achievement(props) {
   const [bgColor, setBgColor] = useState("");
+  const { title, image, url, description } = props;
 
   return (
     <div
@@ -12,13 +13,13 @@ export default function AchievementItem(props) {
       onMouseOver={() => setBgColor(color.primary)}
       onMouseOut={() => setBgColor("")}
     >
-      <a href={props.url} target="_blank" rel="noreferrer">
-        <img src={props.imageUrl} alt={props.title} className="ac-img" />
+      <a href={url} target="_blank" rel="noreferrer">
+        <img src={image} alt={title} className="ac-img" />
         <div className="ac-info">
           <h2 className="ac-title" style={{ color: color.secondary }}>
-            {props.title}
+            {title}
           </h2>
-          <p className="ac-details">{props.description}</p>
+          <p className="ac-details">{description}</p>
         </div>
       </a>
     </div>

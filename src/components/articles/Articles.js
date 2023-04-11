@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Article } from "../article/Article";
-import "./ArticleList.css";
+import "./Articles.css";
 import color from "../../colors/color";
 
-export const ArticleList = (props) => {
+const Articles = (props) => {
   const [latestArticles, setLatestArticles] = useState([]);
   const { heading, description } = props;
+
   const options = {
     method: "POST",
     headers: {
@@ -30,13 +31,12 @@ export const ArticleList = (props) => {
       }`,
     }),
   };
+
   useEffect(() => {
     fetch("https://api.hashnode.com", options)
       .then((response) => response.json())
       .then((data) => {
-        // Extract the article information from the response
         const articles = data.data.user.publication.posts;
-
         setLatestArticles(articles.slice(0, 3));
       })
       .catch((error) => {
@@ -60,3 +60,5 @@ export const ArticleList = (props) => {
     </div>
   );
 };
+
+export default Articles;
