@@ -6,11 +6,6 @@
   text-align: center;
 }
 
-.sl-title {
-  font-size: 50px;
-  font-weight: bold;
-}
-
 .sl-list {
   width: 100%;
   display: flex;
@@ -25,9 +20,5 @@
   .sl {
     padding: 10px;
     margin-top: 15px;
-  }
-
-  .sl-title {
-    font-size: 32px;
   }
 }

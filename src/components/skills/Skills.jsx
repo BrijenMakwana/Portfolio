@@ -1,6 +1,6 @@
 import "./Skills.css";
 import Skill from "../skill/Skill";
-import color from "../../colors/color";
+import SectionHeading from "../../UIComponents/SectionHeading";
 
 export default function Skills(props) {
   const { heading, skills } = props;
@@ -8,9 +8,7 @@ export default function Skills(props) {
   return (
     <div className="sl" id="skills">
       <div className="sl-texts">
-        <h1 className="sl-title" style={{ color: color.primary }}>
-          {heading}
-        </h1>
+        <SectionHeading title={heading} />
       </div>
       <div className="sl-list">
         {skills &&

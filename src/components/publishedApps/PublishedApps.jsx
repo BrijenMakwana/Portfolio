@@ -1,6 +1,6 @@
 import "./PublishedApps.css";
 import AppItem from "../appItem/AppItem";
-import color from "../../colors/color";
+import SectionHeading from "../../UIComponents/SectionHeading";
 
 export default function PublishedApps(props) {
   const { heading, description, apps } = props;
@@ -8,9 +8,7 @@ export default function PublishedApps(props) {
   return (
     <div className="pa" id="apps">
       <div className="pa-texts">
-        <h1 className="pa-title" style={{ color: color.primary }}>
-          {heading}
-        </h1>
+        <SectionHeading title={heading} />
         <p className="pa-desc">{description}</p>
       </div>
       <div className="pa-list">

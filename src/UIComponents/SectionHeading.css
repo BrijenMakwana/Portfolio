@@ -1,0 +1,10 @@
+.section-heading {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .section-heading {
+    font-size: 32px;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Article } from "../article/Article";
 import "./Articles.css";
-import color from "../../colors/color";
+import SectionHeading from "../../UIComponents/SectionHeading";
 
 const Articles = (props) => {
   const [latestArticles, setLatestArticles] = useState([]);
@@ -47,9 +47,7 @@ const Articles = (props) => {
   return (
     <div className="articles-box" id="articles">
       <div className="articles-texts">
-        <h1 className="articles-title" style={{ color: color.primary }}>
-          {heading}
-        </h1>
+        <SectionHeading title={heading} />
         <p className="articles-desc">{description}</p>
       </div>
       <div className="articles-list">
