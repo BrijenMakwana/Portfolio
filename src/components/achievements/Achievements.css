@@ -9,11 +9,6 @@
   width: 65%;
 }
 
-.al-title {
-  font-size: 50px;
-  font-weight: bold;
-}
-
 .al-desc {
   margin: 20px 0px;
   font-size: 20px;
@@ -33,10 +28,6 @@
 
   .al-texts {
     width: 100%;
-  }
-
-  .al-title {
-    font-size: 32px;
   }
 
   .al-desc {

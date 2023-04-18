@@ -1,6 +1,6 @@
 import "./Projects.css";
 import Project from "../project/Project";
-import color from "../../colors/color";
+import SectionHeading from "../../UIComponents/SectionHeading";
 
 export default function Projects(props) {
   const { heading, description, projects } = props;
@@ -8,9 +8,7 @@ export default function Projects(props) {
   return (
     <div className="pl" id="projects">
       <div className="pl-texts">
-        <h1 className="pl-title" style={{ color: color.primary }}>
-          {heading}
-        </h1>
+        <SectionHeading title={heading} />
         <p className="pl-desc">{description}</p>
       </div>
       <div className="pl-list">

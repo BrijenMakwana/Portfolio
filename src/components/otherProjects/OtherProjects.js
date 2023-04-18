@@ -1,6 +1,6 @@
 import OtherProject from "../otherProject/OtherProject";
 import "./OtherProjects.css";
-import color from "../../colors/color";
+import SectionHeading from "../../UIComponents/SectionHeading";
 
 export default function OtherProjects(props) {
   const { heading, description, otherProjects } = props;
@@ -8,9 +8,7 @@ export default function OtherProjects(props) {
   return (
     <div className="ol" id="others">
       <div className="ol-texts">
-        <h1 className="ol-title" style={{ color: color.primary }}>
-          {heading}
-        </h1>
+        <SectionHeading title={heading} />
         <p className="ol-desc">{description}</p>
       </div>
       <div className="ol-list">

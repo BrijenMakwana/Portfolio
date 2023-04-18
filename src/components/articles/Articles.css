@@ -10,12 +10,6 @@
   width: 65%;
 }
 
-.articles-title {
-  font-size: 50px;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
 .articles-desc {
   margin: 20px 0px;
   font-size: 20px;
@@ -35,10 +29,6 @@
 
   .articles-texts {
     width: 100%;
-  }
-
-  .articles-title {
-    font-size: 32px;
   }
 
   .articles-desc {

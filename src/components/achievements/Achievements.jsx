@@ -1,6 +1,6 @@
 import Achievement from "../achievement/Achievement";
 import "./Achievements.css";
-import color from "../../colors/color";
+import SectionHeading from "../../UIComponents/SectionHeading";
 
 export default function Achievements(props) {
   const { heading, description, achievements } = props;
@@ -8,9 +8,7 @@ export default function Achievements(props) {
   return (
     <div className="al" id="achievements">
       <div className="al-texts">
-        <h1 className="al-title" style={{ color: color.primary }}>
-          {heading}
-        </h1>
+        <SectionHeading title={heading} />
         <p className="al-desc">{description}</p>
       </div>
       <div className="al-list">

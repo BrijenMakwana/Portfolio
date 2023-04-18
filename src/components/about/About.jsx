@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import Me from "../../img/brijen_black.png";
 import color from "../../colors/color";
+import SectionHeading from "../../UIComponents/SectionHeading";
 
 export default function About(props) {
   const { about } = props;
@@ -17,9 +18,7 @@ export default function About(props) {
         </div>
       </div>
       <div className="a-right">
-        <h1 className="a-title" style={{ color: color.primary }}>
-          About Me
-        </h1>
+        <SectionHeading title="About Me" />
         <p className="a-desc">{about}</p>
       </div>
     </div>
