@@ -27,7 +27,8 @@ https://gzsq4ssh.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type
         "title": title,
         "image": image.asset->url,
         "description": description,
-        "url": url
+        "url": url,
+        "technologies": technologies
     },
     "achievements": *[_type == "achievements"] {
         "id": _id,
