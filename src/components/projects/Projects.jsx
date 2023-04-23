@@ -13,15 +13,7 @@ export default function Projects(props) {
       </div>
       <div className="pl-list">
         {projects &&
-          projects.map((project) => (
-            <Project
-              key={project.id}
-              title={project.title}
-              image={project.image}
-              url={project.url}
-              description={project.description}
-            />
-          ))}
+          projects.map((project) => <Project key={project.id} {...project} />)}
       </div>
     </div>
   );
