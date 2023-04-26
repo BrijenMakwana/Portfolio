@@ -1,0 +1,16 @@
+.badge {
+  display: block;
+  margin: 10px 10px 0 0;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  width: fit-content;
+}
+
+@media screen and (max-width: 480px) {
+  .badge {
+    font-size: 13px;
+  }
+}

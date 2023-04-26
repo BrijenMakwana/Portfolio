@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import color from "../../colors/color";
+import Badge from "../../UIComponents/Badge";
 import "./OtherProject.css";
 
 export default function OtherProject(props) {
@@ -16,11 +17,11 @@ export default function OtherProject(props) {
       <a href={url} target="_blank" rel="noreferrer">
         <img src={image} alt={title} className="o-img" />
         <div className="o-info">
-          <h2 className="o-title" style={{ color: color.secondary }}>
+          <h3 className="o-title" style={{ color: color.secondary }}>
             {title}
-          </h2>
+          </h3>
           <p className="o-details">{description}</p>
-          <h4 className="o-category">{type}</h4>
+          <Badge title={type} />
         </div>
       </a>
     </div>

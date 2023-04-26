@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Project.css";
+import Badge from "../../UIComponents/Badge";
 import color from "../../colors/color";
 
 export default function Project(props) {
@@ -28,13 +29,7 @@ export default function Project(props) {
 
         <div className="project-technologies-container">
           {technologiesArray.map((tech, index) => (
-            <span
-              key={index}
-              className="project-technology"
-              style={{ backgroundColor: color.primary }}
-            >
-              {tech}
-            </span>
+            <Badge key={index} title={tech} />
           ))}
         </div>
       </a>
