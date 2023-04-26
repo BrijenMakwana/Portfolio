@@ -16,9 +16,9 @@ export const Article = (props) => {
       <a href={`https://brijen.hashnode.dev/${slug}`} target="blank">
         <span className="date">{moment(dateAdded).format("LL")}</span>
         <img src={coverImage} alt={title} className="article-image" />
-        <h2 className="article-title" style={{ color: color.secondary }}>
+        <h3 className="article-title" style={{ color: color.secondary }}>
           {title}
-        </h2>
+        </h3>
         <p className="article-description">{brief}</p>
       </a>
     </div>

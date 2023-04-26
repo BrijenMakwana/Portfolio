@@ -16,9 +16,9 @@ export default function Achievement(props) {
       <a href={url} target="_blank" rel="noreferrer">
         <img src={image} alt={title} className="ac-img" />
         <div className="ac-info">
-          <h2 className="ac-title" style={{ color: color.secondary }}>
+          <h3 className="ac-title" style={{ color: color.secondary }}>
             {title}
-          </h2>
+          </h3>
           <p className="ac-details">{description}</p>
         </div>
       </a>

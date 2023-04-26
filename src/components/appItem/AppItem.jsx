@@ -9,7 +9,7 @@ export default function AppItem(props) {
         <img src={image} alt={title} className="ai-img" />
       </a>
       <div className="ai-info">
-        <h2 className="ai-title">{title}</h2>
+        <h3 className="ai-title">{title}</h3>
       </div>
     </div>
   );
