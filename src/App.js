@@ -52,6 +52,7 @@ function App() {
       <Articles
         heading={portfolio.articlesHeading}
         description={portfolio.articlesDescription}
+        links={portfolio.links}
       />
       <PublishedApps
         heading={portfolio.appsHeading}
