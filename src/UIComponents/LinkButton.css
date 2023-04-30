@@ -1,0 +1,9 @@
+.linkbtn-text {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

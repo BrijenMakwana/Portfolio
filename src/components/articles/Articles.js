@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Article } from "../article/Article";
 import "./Articles.css";
 import SectionHeading from "../../UIComponents/SectionHeading";
+import LinkButton from "../../UIComponents/LinkButton";
 
 const Articles = (props) => {
   const [latestArticles, setLatestArticles] = useState([]);
-  const { heading, description } = props;
+  const { heading, description, links } = props;
+
+  const blogLink = links?.find((linkItem) => linkItem.title === "hashnode");
 
   const options = {
     method: "POST",
@@ -55,6 +58,7 @@ const Articles = (props) => {
           <Article key={item.cuid} {...item} />
         ))}
       </div>
+      <LinkButton text="see all" link={blogLink.link} />
     </div>
   );
 };

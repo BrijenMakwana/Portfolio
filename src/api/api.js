@@ -50,6 +50,11 @@ https://gzsq4ssh.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type
         "url": url,
         "description": description,
         "type": type
+    },
+    "links": *[_type == "links"] {
+        "id": _id,
+        "title": title,
+        "link": link
     }
 }
 
