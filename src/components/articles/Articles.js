@@ -58,7 +58,7 @@ const Articles = (props) => {
           <Article key={item.cuid} {...item} />
         ))}
       </div>
-      <LinkButton text="see all" link={blogLink.link} />
+      <LinkButton text="see all" link={blogLink?.link} />
     </div>
   );
 };
