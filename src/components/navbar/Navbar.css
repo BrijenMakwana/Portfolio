@@ -12,13 +12,13 @@
 .nav-link {
   text-decoration: none;
   text-transform: capitalize;
+  color: #000;
   font-size: 15px;
   display: block;
   font-weight: 500;
   padding: 10px;
   margin-top: 0;
   margin-right: 10px;
-  color: #fff;
   position: relative;
   transition: color 0.3s ease-out, transform 0.3s ease-out;
 }
@@ -30,12 +30,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #19d3da;
+  background-color: #ff4911;
   transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .nav-link:hover {
-  color: #19d3da;
+  color: #ff4911;
   transform: translateY(-5px);
 }
 

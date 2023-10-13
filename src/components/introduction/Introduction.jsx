@@ -10,9 +10,7 @@ const Introduction = (props) => {
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My Name is</h2>
-          <h1 className="i-name" style={{ color: color.primary }}>
-            {name}
-          </h1>
+          <h1 className="i-name">{name}</h1>
           <div className="i-title" style={{ borderLeftColor: color.primary }}>
             <div className="i-title-wrapper">
               {roles &&
@@ -36,8 +34,9 @@ const Introduction = (props) => {
         </div>
       </div>
       <div className="i-right">
-        <div className="i-bg" style={{ backgroundColor: color.primary }}></div>
-        <img className="i-img" src={Me} alt={name} />
+        {/* <div className="i-bg" style={{ backgroundColor: color.primary }}>
+          <img className="i-img" src={Me} alt={name} />
+        </div> */}
       </div>
     </div>
   );
