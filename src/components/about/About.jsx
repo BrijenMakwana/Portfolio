@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
-import Me from "../../img/brijen_black.png";
-import color from "../../colors/color";
+import Me from "../../img/brijen_2.jpg";
 import SectionHeading from "../../UIComponents/SectionHeading";
 
 export default function About(props) {
@@ -9,10 +8,6 @@ export default function About(props) {
   return (
     <div className="a" id="about">
       <div className="a-left">
-        <div
-          className="a-card bg"
-          style={{ backgroundColor: color.primary }}
-        ></div>
         <div className="a-card">
           <img src={Me} alt="Brijen Makwana" className="a-img" />
         </div>
