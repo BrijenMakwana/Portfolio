@@ -7,10 +7,8 @@ export default function PublishedApps(props) {
 
   return (
     <div className="pa" id="apps">
-      <div className="pa-texts">
-        <SectionHeading title={heading} />
-        <p className="pa-desc">{description}</p>
-      </div>
+      <SectionHeading title={heading} />
+      <p className="pa-desc">{description}</p>
       <div className="pa-list">
         {apps &&
           apps.map((app) => (

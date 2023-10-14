@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: flex-start;
   padding: 30px;
-  background-color: #1fa095;
   gap: 10px;
+  border-bottom: 1px solid #000;
 }
 
 .nav-link {
@@ -28,12 +28,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: #000;
   transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: #000;
   transform: translateY(-5px);
 }
 

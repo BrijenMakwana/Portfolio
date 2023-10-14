@@ -1,19 +1,20 @@
 .sl {
-  padding: 20px;
+  border-bottom: 2px solid #000;
+  padding: 30px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #1fa095;
 }
 
 .sl-list {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
   gap: 12px;
 }
 

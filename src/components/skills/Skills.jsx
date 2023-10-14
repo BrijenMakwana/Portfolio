@@ -7,9 +7,7 @@ export default function Skills(props) {
 
   return (
     <div className="sl" id="skills">
-      <div className="sl-texts">
-        <SectionHeading title={heading} />
-      </div>
+      <SectionHeading title={heading} />
       <div className="sl-list">
         {skills &&
           skills.map((skill) => (

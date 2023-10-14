@@ -9,7 +9,6 @@ import apiRequest from "./api/api";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import Articles from "./components/articles/Articles";
-import OtherProjects from "./components/otherProjects/OtherProjects";
 
 function App() {
   const [portfolio, setPortfolio] = useState([]);
@@ -58,10 +57,10 @@ function App() {
         description={portfolio.appsDescription}
         apps={portfolio.apps}
       />
-      <OtherProjects
+      <Projects
         heading={portfolio.otherProjectsHeading}
         description={portfolio.otherProjectsDescription}
-        otherProjects={portfolio.otherProjects}
+        data={portfolio.otherProjects}
       />
       <Footer email={portfolio.email} phone={portfolio.phone} />
     </>

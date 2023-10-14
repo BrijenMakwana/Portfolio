@@ -1,24 +1,25 @@
 .ai {
-  width: 9%;
-  margin: 20px;
+  width: 8vw;
+  border: 1px solid #000;
+  background-color: #f2f24c;
+  padding: 10px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
-.ai-img {
-  width: 100%;
-  object-fit: contain;
-  border-radius: 10%;
+.ai:hover {
+  box-shadow: 4px 4px #000;
 }
 
-.ai-info {
-  width: 100%;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+.ai-img {
+  width: 80%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 1px solid #000;
 }
 
 .ai-title {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
 }
 
