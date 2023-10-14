@@ -2,23 +2,21 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 7px;
-  position: absolute;
-  margin-top: 30px;
-  margin-left: 30px;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 30px;
+  background-color: #1fa095;
+  gap: 10px;
 }
 
 .nav-link {
   text-decoration: none;
   text-transform: capitalize;
   color: #000;
-  font-size: 15px;
+  font-size: 16px;
   display: block;
   font-weight: 500;
   padding: 10px;
-  margin-top: 0;
-  margin-right: 10px;
+  margin: 0;
   position: relative;
   transition: color 0.3s ease-out, transform 0.3s ease-out;
 }
@@ -30,12 +28,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #ff4911;
+  background-color: #fff;
   transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .nav-link:hover {
-  color: #ff4911;
+  color: #fff;
   transform: translateY(-5px);
 }
 
@@ -46,13 +44,13 @@
 @media screen and (max-width: 480px) {
   .nav-bar {
     flex-direction: column;
-    background-color: #0d1b2a;
     z-index: 3;
     border-radius: 10px;
     position: fixed;
     right: 30px;
-    border: 1px solid #fff;
-    transition: bottom 0.5s ease-out; /* Add the transition property */
+    border: 3px solid #000;
+    box-shadow: 4px 4px #000;
+    transition: bottom 0.5s ease-out;
   }
 
   .fab-open {

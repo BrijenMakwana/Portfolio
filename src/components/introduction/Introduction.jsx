@@ -1,7 +1,6 @@
 import React from "react";
 import "./Introduction.css";
 import Me from "../../img/brijen.png";
-import color from "../../colors/color";
 
 const Introduction = (props) => {
   const { name, roles, introduction } = props;
@@ -11,7 +10,7 @@ const Introduction = (props) => {
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My Name is</h2>
           <h1 className="i-name">{name}</h1>
-          <div className="i-title" style={{ borderLeftColor: color.primary }}>
+          <div className="i-title">
             <div className="i-title-wrapper">
               {roles &&
                 roles.split(",").map((role, index) => (
