@@ -3,7 +3,7 @@ import Project from "../project/Project";
 import SectionHeading from "../../UIComponents/SectionHeading";
 
 export default function Projects(props) {
-  const { heading, description, projects } = props;
+  const { heading, description, data } = props;
 
   return (
     <div className="pl" id="projects">
@@ -12,8 +12,8 @@ export default function Projects(props) {
         <p className="pl-desc">{description}</p>
       </div>
       <div className="pl-list">
-        {projects &&
-          projects.map((project) => <Project key={project.id} {...project} />)}
+        {data &&
+          data.map((project) => <Project key={project.id} {...project} />)}
       </div>
     </div>
   );

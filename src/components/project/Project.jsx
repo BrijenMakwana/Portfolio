@@ -4,7 +4,7 @@ import Badge from "../../UIComponents/Badge";
 export default function Project(props) {
   const { title, image, url, description, technologies } = props;
 
-  const technologiesArray = technologies.split(",");
+  const technologiesArray = technologies?.split(",");
 
   return (
     <div className="p">
@@ -16,11 +16,13 @@ export default function Project(props) {
           <p className="p-details">{description}</p>
         </div>
 
-        <div className="project-technologies-container">
-          {technologiesArray.map((tech, index) => (
-            <Badge key={index} title={tech} />
-          ))}
-        </div>
+        {technologies && (
+          <div className="project-technologies-container">
+            {technologiesArray.map((tech, index) => (
+              <Badge key={index} title={tech} />
+            ))}
+          </div>
+        )}
       </a>
     </div>
   );

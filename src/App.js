@@ -8,7 +8,6 @@ import Navbar from "./components/navbar/Navbar";
 import apiRequest from "./api/api";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
-import Achievements from "./components/achievements/Achievements";
 import Articles from "./components/articles/Articles";
 import OtherProjects from "./components/otherProjects/OtherProjects";
 
@@ -42,12 +41,12 @@ function App() {
       <Projects
         heading={portfolio.projectsHeading}
         description={portfolio.projectsDescription}
-        projects={portfolio.projects}
+        data={portfolio.projects}
       />
-      <Achievements
+      <Projects
         heading={portfolio.achievementsHeading}
         description={portfolio.achievementsDescription}
-        achievements={portfolio.achievements}
+        data={portfolio.achievements}
       />
       <Articles
         heading={portfolio.articlesHeading}
