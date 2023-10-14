@@ -53,6 +53,7 @@ const Articles = (props) => {
         <SectionHeading title={heading} />
         <p className="articles-desc">{description}</p>
       </div>
+
       <div className="articles-list">
         {latestArticles.map((item) => (
           <Article key={item.cuid} {...item} />

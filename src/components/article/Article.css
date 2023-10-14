@@ -1,15 +1,18 @@
 .article-container {
   width: 350px;
   height: fit-content;
-  margin: 20px 13px;
   overflow: hidden;
   padding: 10px;
   border-radius: 5px;
   position: relative;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #bafca2;
 }
 
 .article-container:hover {
   animation: pulse 0.5s linear;
+  box-shadow: 4px 4px #000;
 }
 
 @keyframes pulse {
@@ -23,32 +26,34 @@
   font-size: 12px;
   padding: 5px 10px;
   font-weight: bold;
-  background-color: #19d3da;
-}
-
-.article-container:hover .date {
   background-color: #fff;
-  color: #19d3da;
 }
 
 .article-image {
   width: 100%;
   object-fit: contain;
-  border-radius: px;
 }
 
 .article-title {
   font-size: 20px;
   font-weight: 600;
-  margin-top: 10px;
 }
 
 .article-description {
   font-size: 15px;
-  margin-top: 10px;
   line-height: 25px;
 }
 
-.article-container:hover .article-description {
-  color: #000;
+@media screen and (max-width: 480px) {
+  .article-container {
+    width: 100%;
+  }
+
+  .article-title {
+    font-size: 18px;
+  }
+
+  .article-description {
+    font-size: 13px;
+  }
 }

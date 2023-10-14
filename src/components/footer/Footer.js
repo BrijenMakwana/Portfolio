@@ -1,14 +1,8 @@
-import React from "react";
 import "./Footer.css";
-import color from "../../colors/color";
 
 export default function Footer(props) {
   return (
-    <footer
-      className="f"
-      id="contact"
-      style={{ backgroundColor: color.primary }}
-    >
+    <footer className="f" id="contact">
       <div className="f-texts">
         <h1 className="f-title">Contact Details</h1>
         <p className="f-desc">

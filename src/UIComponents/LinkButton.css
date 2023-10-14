@@ -1,9 +1,16 @@
 .linkbtn-text {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   text-transform: capitalize;
   text-decoration: none;
-  color: #000;
-  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 30px;
   border-radius: 5px;
+}
+
+.linkbtn-text:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
 }
