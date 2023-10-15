@@ -1,6 +1,6 @@
 .i {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   border-bottom: 2px solid #000;
 }
@@ -9,6 +9,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  border-right: 2px solid #000;
 }
 
 html {
@@ -17,6 +18,29 @@ html {
 
 .i-right {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  background-color: #a388ee;
+  border-right: 2px solid #000;
+}
+
+.i-card {
+  width: 45%;
+  height: 50vh;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #000;
+  box-shadow: 12px 12px #000;
+}
+
+.i-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 .i-left-wrapper {
@@ -25,7 +49,7 @@ html {
   flex-direction: column;
   justify-content: center;
   height: fit-content;
-  margin-top: 20%;
+  flex: 1;
 }
 
 .i-intro {
@@ -35,7 +59,7 @@ html {
 
 .i-name {
   font-size: 50px;
-  color: #1fa095;
+  color: #a388ee;
 }
 
 .i-title {

@@ -1,6 +1,6 @@
 .ai {
-  width: 10vw;
-  height: 10vw;
+  width: 9vw;
+  height: 9vw;
   border: 1px solid #000;
   background-color: #fff;
   overflow: hidden;
@@ -10,6 +10,7 @@
   justify-content: center;
   box-shadow: 4px 4px #000;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .ai:hover {
@@ -31,7 +32,6 @@
 @media screen and (max-width: 480px) {
   .ai {
     width: 20%;
-    margin: 10px;
   }
 
   .ai-title {
