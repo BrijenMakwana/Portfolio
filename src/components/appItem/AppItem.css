@@ -1,21 +1,26 @@
 .ai {
-  width: 8vw;
+  width: 10vw;
+  height: 10vw;
   border: 1px solid #000;
-  background-color: #7df9ff;
-  padding: 10px;
-  border-radius: 15px;
+  background-color: #fff;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 4px #000;
+  border-radius: 10px;
 }
 
 .ai:hover {
-  box-shadow: 4px 4px #000;
+  box-shadow: 4px 4px #fff;
 }
 
 .ai-img {
-  width: 80%;
+  width: 50%;
   aspect-ratio: 1;
   object-fit: cover;
-  border: 1px solid #000;
+  border-radius: 100%;
 }
 
 .ai-title {
