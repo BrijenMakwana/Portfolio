@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import Me from "../../img/brijen_2.jpg";
+import Me from "../../img/brijen_2.png";
 import SectionHeading from "../../UIComponents/SectionHeading";
 
 export default function About(props) {
@@ -8,9 +8,7 @@ export default function About(props) {
   return (
     <div className="a" id="about">
       <div className="a-left">
-        <div className="a-card">
-          <img src={Me} alt="Brijen Makwana" className="a-img" />
-        </div>
+        <img src={Me} alt="Brijen Makwana" className="a-img" />
       </div>
       <div className="a-right">
         <SectionHeading title="About Me" />

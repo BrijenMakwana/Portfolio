@@ -1,6 +1,6 @@
 import React from "react";
 import "./Introduction.css";
-import Me from "../../img/brijen.jpg";
+import Me from "../../img/brijen.png";
 
 const Introduction = (props) => {
   const { name, roles, introduction } = props;
@@ -33,9 +33,7 @@ const Introduction = (props) => {
         </div>
       </div>
       <div className="i-right">
-        <div className="i-card">
-          <img src={Me} alt="Brijen Makwana" className="i-img" />
-        </div>
+        <img src={Me} alt="Brijen Makwana" className="i-img" />
       </div>
     </div>
   );
