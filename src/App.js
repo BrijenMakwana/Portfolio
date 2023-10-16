@@ -38,11 +38,13 @@ function App() {
       <About about={portfolio.about} />
       <Skills heading={portfolio.skillsHeading} skills={portfolio.skills} />
       <Projects
+        id="projects"
         heading={portfolio.projectsHeading}
         description={portfolio.projectsDescription}
         data={portfolio.projects}
       />
       <Projects
+        id="achievements"
         heading={portfolio.achievementsHeading}
         description={portfolio.achievementsDescription}
         data={portfolio.achievements}
@@ -58,6 +60,7 @@ function App() {
         apps={portfolio.apps}
       />
       <Projects
+        id="others"
         heading={portfolio.otherProjectsHeading}
         description={portfolio.otherProjectsDescription}
         data={portfolio.otherProjects}

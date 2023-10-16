@@ -12,12 +12,12 @@
   justify-content: center;
   position: relative;
   height: 100%;
-  background-color: #bafca2;
+  background-color: #000000;
   border-right: 2px solid #000;
 }
 
 .a-img {
-  width: 30vw;
+  width: 40vw;
   max-width: 550px;
   aspect-ratio: 1;
   object-fit: contain;

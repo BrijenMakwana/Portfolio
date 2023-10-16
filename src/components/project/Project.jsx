@@ -7,12 +7,12 @@ export default function Project(props) {
   const technologiesArray = technologies?.split(",");
 
   const randomColors = [
-    "#B0D9B1",
-    "#DFCCFB",
-    "#FFF6DC",
-    "#E4D0D0",
-    "#FD8A8A",
+    "#5C8374",
+    "#A78295",
+    "#8CABFF",
+    "#03C988",
     "#FAF4B7",
+    "#B0578D",
   ];
 
   const getRandomColor = () => {

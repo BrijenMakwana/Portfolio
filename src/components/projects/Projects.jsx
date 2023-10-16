@@ -3,10 +3,10 @@ import Project from "../project/Project";
 import SectionHeading from "../../UIComponents/SectionHeading";
 
 export default function Projects(props) {
-  const { heading, description, data } = props;
+  const { id, heading, description, data } = props;
 
   return (
-    <div className="pl" id="projects">
+    <div className="pl" id={id}>
       <div className="pl-texts">
         <SectionHeading title={heading} />
         <p className="pl-desc">{description}</p>

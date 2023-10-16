@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import Me from "../../img/brijen_2.png";
+import Me from "../../assets/images/brijen_2.png";
 import SectionHeading from "../../UIComponents/SectionHeading";
 
 export default function About(props) {

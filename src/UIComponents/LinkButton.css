@@ -7,10 +7,10 @@
   color: #fff;
   padding: 20px 30px;
   border-radius: 5px;
+  border: 1px solid #000;
 }
 
 .linkbtn-text:hover {
   background-color: #fff;
   color: #000;
-  border: 1px solid #000;
 }
