@@ -4,12 +4,11 @@
   overflow: hidden;
   padding: 10px;
   border: 1px solid #000;
-  border-radius: 15px;
+  box-shadow: 4px 4px #000;
 }
 
 .p:hover {
   animation: pulse 0.4s linear;
-  box-shadow: 4px 4px #000;
 }
 
 .p-img {
