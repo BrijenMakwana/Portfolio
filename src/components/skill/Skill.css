@@ -3,20 +3,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 20vw;
-  height: 20vw;
-  max-width: 100px;
-  max-height: 100px;
-  overflow: hidden;
+  height: fit-content;
+  width: fit-content;
+}
+
+.img-container {
   padding: 10px;
+  width: 5vw;
+  height: 5vw;
   border: 1px solid #000;
   box-shadow: 3px 3px #000;
   border-radius: 100%;
   background-color: #fffaf4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .s-img {
-  width: 30%;
+  width: 70%;
   aspect-ratio: 1;
   max-width: 40px;
   max-height: 40px;
