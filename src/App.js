@@ -9,7 +9,6 @@ import apiRequest from "./api/api";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import Achievements from "./components/achievements/Achievements";
-import Articles from "./components/articles/Articles";
 import OtherProjects from "./components/otherProjects/OtherProjects";
 
 function App() {
@@ -48,11 +47,6 @@ function App() {
         heading={portfolio.achievementsHeading}
         description={portfolio.achievementsDescription}
         achievements={portfolio.achievements}
-      />
-      <Articles
-        heading={portfolio.articlesHeading}
-        description={portfolio.articlesDescription}
-        links={portfolio.links}
       />
       <PublishedApps
         heading={portfolio.appsHeading}
