@@ -20,9 +20,6 @@ export default function Navbar(props) {
       <a href="#achievements" className="nav-link">
         achievements
       </a>
-      <a href="#articles" className="nav-link">
-        articles
-      </a>
       <a href="#apps" className="nav-link">
         apps
       </a>
